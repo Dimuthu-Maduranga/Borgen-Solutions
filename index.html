@@ -517,8 +517,7 @@ https://templatemo.com/tm-578-first-portfolio
                     </div>
 
                     <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                        <form class="custom-form contact-form" target="_blank"
-                            action="https://formsubmit.co/flaranga790@gmail.com" method="POST">
+                        <form onsubmit="sendEmail(); reset(); return false;" class="custom-form contact-form">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating">
@@ -644,6 +643,7 @@ https://templatemo.com/tm-578-first-portfolio
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- <script>
         var typed = new Typed(".auto-type", {
             strings: ["UI/UX DESIGNER ", "FRONT-END DEVELOPER", "WEB DEVELOPER"],
@@ -652,6 +652,22 @@ https://templatemo.com/tm-578-first-portfolio
             loop: true
         })
     </script> -->
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "flaranga790@gmail.com",
+                Password: "D10FC33E888FC00AAF8297E3C35E3D8F79A2",
+                To: 'flaranga790@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact From Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
     <script src="js/typed.js/typed.min.js"></script>
     <script src="js/main.js"></script>
 </body>
