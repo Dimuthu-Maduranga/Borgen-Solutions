@@ -661,7 +661,7 @@ https://templatemo.com/tm-578-first-portfolio
                 To: 'flaranga790@gmail.com',
                 From: document.getElementById('email').value,
                 Subject: "New Contact From Enquiry",
-                Body: "And this is the body"
+                Body: "Name: " + document.getElementById("name").value
             }).then(
                 message => alert(message)
             );
