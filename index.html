@@ -539,8 +539,8 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="website" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox1" value="1">
+                                        <input name="website" type="checkbox" class="form-check-input" id="website1"
+                                            value="1">
 
                                         <label class="form-check-label" for="inlineCheckbox1">
                                             <i class="bi-globe form-check-icon"></i>
@@ -551,8 +551,8 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="branding" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox2" value="1">
+                                        <input name="branding" type="checkbox" class="form-check-input" id="branding1"
+                                            value="1">
 
                                         <label class="form-check-label" for="inlineCheckbox2">
                                             <i class="bi-lightbulb form-check-icon"></i>
@@ -563,8 +563,8 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline">
-                                        <input name="ecommerce" type="checkbox" class="form-check-input"
-                                            id="inlineCheckbox3" value="1">
+                                        <input name="ecommerce" type="checkbox" class="form-check-input" id="ecommerce1"
+                                            value="1">
 
                                         <label class="form-check-label" for="inlineCheckbox3">
                                             <i class="bi-phone form-check-icon"></i>
@@ -575,8 +575,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-3 col-md-6 col-6">
                                     <div class="form-check form-check-inline me-0">
-                                        <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4"
-                                            value="1">
+                                        <input name="seo" type="checkbox" class="form-check-input" id="seo1" value="1">
 
                                         <label class="form-check-label" for="inlineCheckbox4">
                                             <i class="bi-google form-check-icon"></i>
@@ -587,7 +586,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-12 col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" id="message" name="message"
+                                        <textarea class="form-control" id="message1" name="message"
                                             placeholder="Tell me about the project"></textarea>
 
                                         <label for="floatingTextarea">Tell me about the project</label>
@@ -644,14 +643,6 @@ https://templatemo.com/tm-578-first-portfolio
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["UI/UX DESIGNER ", "FRONT-END DEVELOPER", "WEB DEVELOPER"],
-            typeSpeed: 50,
-            backSpeed: 5,
-            loop: true
-        })
-    </script> -->
     <script>
         function sendEmail() {
             Email.send({
@@ -662,6 +653,12 @@ https://templatemo.com/tm-578-first-portfolio
                 From: 'flaranga790@gmail.com',
                 Subject: "New Contact From Enquiry",
                 Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Selection 1(Website): " + document.getElementById("website1").value
+                    + "<br> Selection 2(Branding): " + document.getElementById("branding1").value
+                    + "<br> Selection 3(Ecommerce): " + document.getElementById("ecommerce1").value
+                    + "<br> Selection 3(SEO): " + document.getElementById("seo1").value
+                    + "<br> Message: " + document.getElementById("message1").value
             }).then(
                 message => alert(message)
             );
