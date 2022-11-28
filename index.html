@@ -530,60 +530,12 @@ https://templatemo.com/tm-578-first-portfolio
 
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-floating">
-                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
-                                            class="form-control" placeholder="Email address" required="">
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Email address" required="">
 
                                         <label for="floatingInput">Email address</label>
                                     </div>
                                 </div>
-
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="form-check form-check-inline">
-                                        <input name="website" type="checkbox" class="form-check-input" id="website1"
-                                            value="1">
-
-                                        <label class="form-check-label" for="inlineCheckbox1">
-                                            <i class="bi-globe form-check-icon"></i>
-                                            <span class="form-check-label-text">Websites</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="form-check form-check-inline">
-                                        <input name="branding" type="checkbox" class="form-check-input" id="branding1"
-                                            value="1">
-
-                                        <label class="form-check-label" for="inlineCheckbox2">
-                                            <i class="bi-lightbulb form-check-icon"></i>
-                                            <span class="form-check-label-text">Branding</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="form-check form-check-inline">
-                                        <input name="ecommerce" type="checkbox" class="form-check-input" id="ecommerce1"
-                                            value="1">
-
-                                        <label class="form-check-label" for="inlineCheckbox3">
-                                            <i class="bi-phone form-check-icon"></i>
-                                            <span class="form-check-label-text">Ecommerce</span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-3 col-md-6 col-6">
-                                    <div class="form-check form-check-inline me-0">
-                                        <input name="seo" type="checkbox" class="form-check-input" id="seo1" value="1">
-
-                                        <label class="form-check-label" for="inlineCheckbox4">
-                                            <i class="bi-google form-check-icon"></i>
-                                            <span class="form-check-label-text">SEO</span>
-                                        </label>
-                                    </div>
-                                </div>
-
                                 <div class="col-lg-12 col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control" id="message1" name="message"
@@ -646,9 +598,7 @@ https://templatemo.com/tm-578-first-portfolio
     <script>
         function sendEmail() {
             Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "dimuthumaduranga96@gmail.com",
-                Password: "FB4DA6B145F95FC81B9877874AE94077CEFF",
+                SecureToken: "5c62de52-3342-4d38-9a0c-645bf06c5a97",
                 To: 'flaranga790@gmail.com',
                 From: document.getElementById("email").value,
                 Subject: "New Contact From Enquiry",
